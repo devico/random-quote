@@ -7,7 +7,6 @@ let getRandomQuote = () => {
 		    return response.json()
 		  })
 		  .then(data => {
-		  	// data[Math.floor(Math.random() * data.length)].quote
 		    console.log(data[Math.floor(Math.random() * data.length)].quote)
 		  })
 		  .catch(ex => {
